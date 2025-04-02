@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #6b46c1, #7e57c2, #6b46c1);
+    min-height: 100vh;
+    padding: 24px;
+  }
+
+  /* Main container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .logo-button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .logo-dot {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  .nav-tabs {
+    background-color: black;
+    border-radius: 50px;
+    padding: 4px;
+    display: flex;
+  }
+
+  .nav-tab {
+    color: #9ca3af;
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .nav-tab.active {
+    color: white;
+  }
+
+  .search-container {
+    position: relative;
+  }
+
+  .search-input {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 16px;
+    padding-right: 40px;
+    width: 250px;
+    outline: none;
+  }
+
+  .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .search-icon {
+    color: white;
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Popular movies section */
+  .section-title {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .featured-movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .featured-movie {
+    position: relative;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .featured-movie-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .featured-movie-tagline {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 24px;
+    color: #fbbf24;
+    font-size: 12px;
+  }
+
+  /* Categories */
+  .categories {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .category {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .category:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Movie list */
+  .movie-list-container {
+    position: relative;
+  }
+
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+
+  .movie-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .movie-poster {
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .movie-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .movie-rating {
+    color: #d1d5db;
+    font-size: 12px;
+  }
+
+  .next-button {
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .movie-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+    }
+    
+    .featured-movies {
+      grid-template-columns: 1fr;
+    }
+    
+    .movie-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .movie-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .search-input {
+      width: 100%;
+    }
+  }

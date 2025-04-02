@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+         <header>
+            <div class="header">
+                <button class="logo-button">
+                  <div class="logo-dot"></div>
+                  Silver Screen
+                </button>
+          
+                <div class="nav-tabs">
+                  <button class="nav-tab active">Movie</button>
+                  <button class="nav-tab">Series</button>
+                  <button class="nav-tab">Originals</button>
+                </div>
+          
+                <div class="search-container">
+                  <input type="text" class="search-input" placeholder="Search...">
+                  <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+         </header>
+        
+    
+        <!-- Popular Movies Section -->
+         <main>
+            <div>
+                <div class="section-title">#Popular Movies</div>
+                <div class="featured-movies">
+                  <div class="featured-movie" style="background-image: url('/clean.webp?height=400&width=700&text=Cleaner')">
+                    <div class="featured-movie-title">Cleaner</div>
+                  </div>
+                  <div class="featured-movie" style="background-image: url('/avengers.jpg?height=400&width=700&text=Cosmic+Chaos')">
+                    <div class="featured-movie-title">Avengers</div>
+                    <div class="featured-movie-tagline">IN SPACE... THERE IS ONLY MARVEL</div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Categories -->
+              <div class="categories">
+                <button class="category">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" fill="currentColor" />
+                  </svg>
+                  Trending
+                </button>
+                <button class="category">
+                  <span>🎯</span>
+                  Action
+                </button>
+                <button class="category">
+                  <span>❤️</span>
+                  Romance
+                </button>
+                <button class="category">
+                  <span>🎮</span>
+                  Animation
+                </button>
+                <button class="category">
+                  <span>👻</span>
+                  Horror
+                </button>
+                <button class="category">
+                  <span>⚙️</span>
+                  Special
+                </button>
+                <button class="category">
+                  <span>🎭</span>
+                  Drakor
+                </button>
+              </div>
+          
+              <!-- Movie List -->
+              <div class="movie-list-container">
+                <div class="movie-list">
+                  <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('/ironman.jpg?height=200&width=150&text=Cleaner')"></div>
+                    <div class="movie-title">Iron Man</div>
+                    <div class="movie-rating">Popularity - 9.4</div>
+                  </div>
+                  <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('/hulk.webp?height=200&width=150&text=Cosmic+Chaos')"></div>
+                    <div class="movie-title">The Incredible Hulk</div>
+                    <div class="movie-rating">Popularity - 9.4</div>
+                  </div>
+                  <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('/ironman2.jpg?height=200&width=150&text=Carjackers')"></div>
+                    <div class="movie-title">Iron Man 2</div>
+                    <div class="movie-rating">Popularity - 9.4</div>
+                  </div>
+                  <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('/thor.webp?height=200&width=150&text=Captain+America')"></div>
+                    <div class="movie-title">Thor</div>
+                    <div class="movie-rating">Popularity - 9.4</div>
+                  </div>
+                  <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('/captainamerica.jpg?height=200&width=150&text=The+Codes+of+War')"></div>
+                    <div class="movie-title">Captain America: The First Avenger</div>
+                    <div class="movie-rating">Popularity - 9.4</div>
+                  </div>
+                  <div class="movie-card">
+                    <div class="movie-poster" style="background-image: url('theavengers.jpg?height=200&width=150&text=The+Quiet+Ones')"></div>
+                    <div class="movie-title">The Avengers</div>
+                    <div class="movie-rating">Popularity - 9.4</div>
+                  </div>
+                </div>
+                
+                <button class="next-button">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+         </main>
+        
+      </div>
+</body>
+</html>
